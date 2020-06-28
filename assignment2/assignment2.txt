@@ -1,0 +1,16 @@
+Convert the CUDA program that you wrote for assignment one into an
+OpenMP one. The output of both your CUDA and OpenML programs must be the same. 
+
+In order to use openmp on Kong you must type
+
+module load intel/compiler/2017.2.174
+
+When submtting a job to the cluster you have to specify the number of cores
+that you need. Type 
+
+qsub -pe threaded <cores> sgescript
+
+Submit your assignments by copying your program to your AFS course folder 
+/afs/cad/courses/ccs/s19/cs/677/002/<UCID>
+
+Due date: Feb 13th, 2019

@@ -1,0 +1,24 @@
+Write a convolutional network in Keras to train the Mini-ImageNet 
+dataset on the course website. Your constraint is to create a network
+that achieves at least 80% test accuracy (in order to get full points).
+
+Submit your assignments as two files train.py and test.py. Make
+train.py take three inputs: the input training data, training labels,
+and a model file name to save the model to. 
+
+python train.py <train.npy> <trainlablels.npy> <model file>
+
+It is straightforward to save a Keras model to file, see the simple example here 
+https://keras.io/getting-started/faq/#savingloading-whole-models-architecture-weights-optimizer-state
+
+Make test.py take three inputs: the input test data, test labels,
+and a model file name to load the model. 
+
+python test.py <test.npy> <testlabels.npy> <model file>
+
+The output of test.py is the test error of the data which is
+the number of misclassifications divided by size of the test set.
+
+Copy both your programs and model file to your AFS 
+course folder /afs/cad/courses/ccs/s20/cs/677/002/<UCID>. The 
+assignment is due by midnight on March 30th 2020.

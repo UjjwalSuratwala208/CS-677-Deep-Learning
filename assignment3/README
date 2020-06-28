@@ -1,0 +1,21 @@
+The program is implemented for 3 hidden nodes. Following are answers for the
+questions.
+
+1. Does your network reach 0 training error? 
+Answer: Yes
+
+2. Can you make your program into stochastic gradient descent (SGD)?
+Answer: Yes
+
+3. Does SGD give lower test error than full gradient descent?
+Answer: No. SGD helps in reaching local minimum quickly as it takes samples
+from the data for execution. 
+
+4. What happens if change the activation to sign? Will the same algorithm
+work? If not what will you change to make the algorithm converge to a local
+minimum?
+Answer: Changing activation function to sign is keeping objective almost
+constant for the program and giving incorrect predictions. Sign function fails
+to model non-linear relationship between the input parameters and output
+values. This function is flat and derivative becomes 0 in maximum cases during
+back propagation.

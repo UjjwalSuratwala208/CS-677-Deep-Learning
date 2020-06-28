@@ -1,0 +1,34 @@
+Implement stochastic gradient descent in your back propagation program
+that you wrote in assignment 3. We will do the mini-batch SGD search. 
+
+I. Mini-batch SGD algorithm:
+
+Initialize random weights
+for(k = 0 to n_epochs):
+	Shuffle the rows (or row indices)
+	for j = 0 to rows-1:
+		Select the first k datapoints where k is the mini-batch size
+		Determine gradient using just the selected k datapoints
+		Update weights with gradient
+	Recalculate objective
+
+Your input, output, and command line parameters are the same as assignment 3.
+We take the batch size k as input. We leave the offset for the final layer 
+to be zero at this time.
+
+Test your program on the XOR dataset:
+
+1 0 0
+1 1 1
+-1 0 1
+-1 1 0
+
+1. Test your program on breast cancer and ionosphere given on the website. Is the 
+mini-batch faster or the original one? How about accuracy?
+
+2. Is the search faster or more accurate if you keep track of the best objective
+in the inner loop?
+
+Submit your assignments by copying your program to your AFS 
+course folder /afs/cad/courses/ccs/s20/cs/677/002/<UCID>. The 
+assignment is due on March 9th, 2020.
