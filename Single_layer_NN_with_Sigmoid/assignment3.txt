@@ -1,4 +1,4 @@
-	Write a Python program that trains a single layer neural network
+Write a Python program that trains a single layer neural network
 with sigmoid activation. You may use numpy. Your input is in dense 
 liblinear format which means you exclude the dimension and include 0's. 
 
